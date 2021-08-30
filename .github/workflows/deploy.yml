@@ -21,13 +21,13 @@ jobs:
           hugo-version: "0.79.0"
 
       - name: Build
-        run: cd website && hugo --gc --minify --themesDir .
+        run: hugo --gc --minify --themesDir .
 
       - name: Deploy website to the branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/public
+          publish_dir: ./public
           #external_repository:  gurusabarish/hugo-profile-demo
           publish_branch: demo
           user_name: hugo-profile bot
