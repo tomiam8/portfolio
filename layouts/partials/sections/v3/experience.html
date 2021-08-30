@@ -1,6 +1,6 @@
 <section id="experience">
   <div class="container-fluid pt-5">
-    <div class="text-dark text-center h3">Experience</div>
+    <div class="text-dark text-center h3">Work & Education</div>
 
     <div class="row justify-content-center py-md-5">
       <div class="d-md-none d-lg-none d-sm-block">
@@ -28,16 +28,22 @@
       <div id="nav-pills-out" class="d-none d-md-block nav flex-column nav-pills col-md-2" id="v-pills-tab"
         role="tablist" aria-orientation="vertical">
         {{ range $index, $element := .Site.Params.experience }}
+        {{ $companyshort := "set here for scope" }}
+        {{ if not .companyshort }}
+            {{ $companyshort = .company }}
+        {{ else }}
+            {{ $companyshort = .companyshort }}
+        {{ end }}
         {{ if (eq $index 0) }}
         {{ if .id }}
         <a class="nav-link active" id="{{ .id }}-tab" data-toggle="pill" href="#{{ .id }}" role="tab"
           aria-controls="{{ .id }}" aria-selected="true">
-          {{ .company }}
+          {{ $companyshort }}
         </a>
         {{ else }}
         <a class="nav-link active" id="{{ .company }}-tab" data-toggle="pill" href="#{{ .company }}" role="tab"
           aria-controls="{{ .company }}" aria-selected="true">
-          {{ .company }}
+          {{ $companyshort }}
         </a>
         {{ end }}
 
@@ -46,12 +52,12 @@
         {{ if .id }}
         <a class="nav-link" id="{{ .id }}-tab" data-toggle="pill" href="#{{ .id }}" role="tab" aria-controls="{{ .id }}"
           aria-selected="false">
-          {{ .company }}
+          {{ $companyshort }}
         </a>
         {{ else }}
         <a class="nav-link" id="{{ .company }}-tab" data-toggle="pill" href="#{{ .company }}" role="tab"
           aria-controls="{{ .company }}" aria-selected="false">
-          {{ .company }}
+          {{ $companyshort }}
         </a>
         {{ end }}
 
