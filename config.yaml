@@ -1,0 +1,164 @@
+baseURL: "https://tomiam8.github.io"
+languageCode: "en-us"
+title: "Tom Schwarz"
+theme: "./.."
+relativeURLs: true
+
+googleanalytics: UA-xxxxxx-x
+disqusShortname:
+Paginate: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+enableEmoji: true
+params:
+  version: 3
+
+  favicon: "/images/fav.png"
+  description: "Hi, I'm Tom!"
+
+  # Navbar Menus
+  #customMenus:
+  #  - name: "Blog"
+  #    Url: "/blog"
+
+  # home
+  disable_home: false
+  profile_image: "/images/profile.jpg"
+  name: "Tom Schwarz"
+  profession: "Computer Science & Physics undergraduate student @ USYD"
+  github: "https://github.com/tomiam8"
+  linkedin: "https://www.linkedin.com/in/thomas-s-3332b7118/"
+  instagram: "https://instagram.com/tomiam8"
+  facebook: "https://facebook.com/tomiam8"
+    #twitter: "https://twitter.com/"
+
+  # About
+  disable_about: false
+  descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves getting my hands dirty and learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithim design and analysis, C programming and electromagnetism courses."
+  descripe_l2_person: "I've spent a while messing around trying to make cool stuffwith varying levels of succes. I've detailed some of the successful adventures in [projects](#projects)"
+  skills: #I've disabled the skills, see layouts/partials/sections/v3/about.html to reenable
+    - name: CSS
+      percentage: 90
+    - name: Django
+      percentage: 85
+    - name: Hugo
+      percentage: 80
+    - name: React JS
+      percentage: 70
+
+  # Experience (renamed Work & Education)
+  disable_experience: false
+  experience:
+    - company: "University of Sydney"
+      id: "USYD"
+      companyshort: "Uni tutor" #Shows up as a longer company name. Can change 'company' to be a more descriptive list term, companyfull as actual company. SET AN ID if you do this, different to the company or companyshort. Should probs refactor that whole thing to fix it, but for now the bad hack stays.
+      role: "Academic tutor (TA)"
+      startdate: March 2021
+      enddate: present
+      featuredpoints:
+        - point: Taught COMP2123 - Algorithims and Data Structures
+        - point: Taught INFO113 - Object Oriented Programming
+        - point: Ran a weekly tutorial class, teaching students and helping them solve problems
+    - company: "USYD Physics Society"
+      id: "PhySoc"
+      #companyshort: "Physics Society"
+      role: "President"
+      startdate: October 2020
+      enddate: present
+      featuredpoints:
+        - point: Lead society to organise, market and run events for members
+        - point: Ensured society continues to support members during transition back in-person and return to lockdown over 2021
+          #    - company: "University of Sydney"
+          #      companyshort: "B. Science (Physics, Computer Science)"
+          #      id: "Undergrad"
+          #      role: "B. Science (Adv) & Advanced Studies (Physics, Computer Science)"
+          #      startdate: 2019
+          #      enddate: 2022 (expected)
+          #      featuredpoints:
+          #        - point: a point
+    - company: "Barker College"
+      companyshort: "H.S. tutor"
+      id: "mentoring"
+      # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
+      role: "Supervised Study Mentor"
+      startdate: March 2019
+      enddate: June 2021
+      featuredpoints:
+        - point: Supervised a high school's afternoon study program as part of a team of tutors
+        - point: Helped students with maths, physics and other subjects
+        - point: Helped students to stay focused and study effectively
+    - company: "WiseTech Global"
+      role: "Work Experience"
+      startdate: September 2016
+      enddate: September 2016
+      featuredpoints:
+        - point: Worked on UI/UX improvements as part of the front end team for a new web-based product over a week long period
+
+  # Education
+  disable_education: false
+  education:
+    - degree: "B. Science (Advanced) and B. Advanced Studies"
+      branch: "Physics, Computer Science"
+      university: "University of Science"
+      startedyear: "2019"
+      graduation: "2022 (expected)"
+
+  # Projects
+  disable_projects: false
+  projects:
+    - name: "Shuffler for Spotify"
+      img: /images/shuffler.png
+      githublink: "https://github.com/tomiam8/shuffler-for-spotify"
+      featuredlink: "https://tomiam8.github.io/shuffler-for-spotify/index.html"
+      description: "Spotify's Shuffle uses advanced algorithims to play the same songs again and again. Shuffler for Spotify creates a copy of a playlist with a randomized order, that you play with shuffle off for a truly shuffled experience."
+    - name: "Online Bidding Problem"
+      img: /images/onlinebidding.jpg
+      featuredlink: "https://drive.google.com/file/d/1OGMq4k2vHGIHoeg2FePqdGSepTsPAtFg/view?usp=sharing"
+      description: "Created an algorithim to directly solve the linear programming formulation of the Online Bidding problem. Algorithim worked empirically, but ran out of time to prove correctness. More details at the linked presentation!"
+    - name: "USYD Hackathon 2nd place"
+      img: /images/qrtones.png
+      githublink: "https://github.com/mattyhempstead/syncs-hack-2020"
+      featuredlink: "https://devpost.com/software/syncs-hack-2020"
+      description: "Made QR Tones, an app that encodes text to audio wave-forms, similar to QR Codes but for sound. When text is provided, the app will convert it into a tune that encodes the data that is to be transmitted. Any other device listening can decode the data and receive the text that is being transmitted. Created a somewhat working prototype."
+    - name: "Droid Racing Competition"
+      featuredlink: "https://photos.app.goo.gl/mGGf87a1gbboQiwf8"
+      img: /images/drc.jpg
+      description: "As part of the USYD robotics club, entered a computer-controlled RC car into the Droid Racing Competition as part of a team. While we didn't win, our car did complete a loop around the track!"
+
+
+  # Achievements
+  disable_achievements: true
+  achievements:
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+
+  # Contact
+  disable_contact: false
+  contact_content: I'm always happy to talk! You can contact me at my email thomaspschwarz@outlook.com, or any other method that works!
+  email: "thomaspschwarz@outlook.com"
+
+  # Footer
+  socialiconfooter: true
+  recentposts: false
+
+  # Blog
+  showdescription: false
+  tweet: false
+
