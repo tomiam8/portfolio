@@ -143,12 +143,29 @@ a:hover {
   opacity: 0.9;
 }
 .bg-pro img {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   border-radius: 0.5rem !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
+
+.pro-img {
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
 .content-pro {
   height:100%;
   background-color: #e5e4e2 !important;
