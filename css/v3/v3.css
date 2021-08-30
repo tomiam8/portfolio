@@ -143,14 +143,14 @@ a:hover {
   opacity: 0.9;
 }
 .bg-pro img {
-  height: 250px;
+  height: 100%;
   width: 100%;
   border-radius: 0.5rem !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 .content-pro {
-  height: 250px;
+  height:100%;
   background-color: #e5e4e2 !important;
   border-top-right-radius: 0.5rem !important;
   border-bottom-right-radius: 0.5rem !important;
