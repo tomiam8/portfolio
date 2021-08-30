@@ -6,6 +6,7 @@
       <div class="col-md-8 pro m-3 shadow" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <div class="row">
           <div class="col-md-6 bg-pro">
+              <div class="pro-img" style="background-image: url(&quot; {{ .Params.img }} &quot;);"></div>
             <img src="{{ .Params.img }}" alt="{{ .Title }}" />
           </div>
           <div class="col-md-6 content-pro p-3 bg-light">
@@ -34,7 +35,8 @@
       <div class="col-md-8 pro m-3 shadow" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <div class="row">
           <div class="col-md-6 bg-pro">
-            <img src="{{ .img }}" alt="{{ .name }}" />
+              <div class="pro-img" style="background-image: url(&quot;.{{ .img }}&quot;);"></div>
+              <!--<img src="{{ .img }}" alt="{{ .name }}" />-->
           </div>
           <div class="col-md-6 content-pro p-3 bg-light">
             <div class="content-pro-top">
