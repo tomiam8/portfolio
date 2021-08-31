@@ -197,7 +197,7 @@ a:hover {
   }
   .content-pro {
     background-color: transparent !important;
-    position: absolute;
+    /*position: absolute;*/
     top: 8px;
   }
   .content-pro-top {
