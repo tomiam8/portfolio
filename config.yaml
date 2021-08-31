@@ -1,4 +1,4 @@
-baseURL: "https://tomiam8.github.io"
+baseURL: "https://tomiam8.github.io/portfolio/"
 languageCode: "en-us"
 title: "Tom Schwarz"
 theme: "./.."
