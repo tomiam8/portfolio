@@ -41,8 +41,8 @@ params:
 
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves getting my hands dirty and learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithim design and analysis, C programming and electromagnetism courses."
-  descripe_l2_person: "I've spent a while messing around trying to make cool stuffwith varying levels of succes. I've detailed some of the successful adventures in [projects](#projects)"
+  descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithim design and analysis, C programming and electromagnetism courses."
+  descripe_l2_person: "I've spent a while messing around trying to make cool stuffwith varying levels of succes. I've detailed some of the successful adventures in [projects](#projects)."
   skills: #I've disabled the skills, see layouts/partials/sections/v3/about.html to reenable
     - name: CSS
       percentage: 90
@@ -96,6 +96,7 @@ params:
         - point: Helped students to stay focused and study effectively
     - company: "WiseTech Global"
       role: "Work Experience"
+      id: "WiseTechGlobal"
       startdate: September 2016
       enddate: September 2016
       featuredpoints:
