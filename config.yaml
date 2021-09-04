@@ -1,4 +1,4 @@
-baseURL: "https://tomiam8.github.io/portfolio/"
+baseURL: "https://tomschwarz.co"
 languageCode: "en-us"
 title: "Tom Schwarz"
 theme: "./.."
@@ -41,8 +41,8 @@ params:
 
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithim design and analysis, C programming and electromagnetism courses."
-  descripe_l2_person: "I've spent a while messing around trying to make cool stuffwith varying levels of succes. I've detailed some of the successful adventures in [projects](#projects)."
+  descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithm design and analysis, C programming and electromagnetism courses."
+  descripe_l2_person: "I've spent a while messing around trying to make cool stuff with varying levels of success. I've detailed some of the successful adventures in [projects](#projects)."
   skills: #I've disabled the skills, see layouts/partials/sections/v3/about.html to reenable
     - name: CSS
       percentage: 90
@@ -63,7 +63,7 @@ params:
       startdate: March 2021
       enddate: present
       featuredpoints:
-        - point: Taught COMP2123 - Algorithims and Data Structures
+        - point: Taught COMP2123 - Algorithms and Data Structures
         - point: Taught INFO113 - Object Oriented Programming
         - point: Ran a weekly tutorial class, teaching students and helping them solve problems
     - company: "USYD Physics Society"
@@ -122,7 +122,7 @@ params:
     - name: "Online Bidding Problem"
       img: /images/onlinebidding.jpg
       featuredlink: "https://drive.google.com/file/d/1OGMq4k2vHGIHoeg2FePqdGSepTsPAtFg/view?usp=sharing"
-      description: "Created an algorithim to directly solve the linear programming formulation of the Online Bidding problem. Algorithim worked empirically, but ran out of time to prove correctness. More details at the linked presentation!"
+      description: "Created an algorithm to directly solve the linear programming formulation of the Online Bidding problem. Algorithm worked empirically, but ran out of time to prove correctness. More details at the linked presentation!"
     - name: "USYD Hackathon 2nd place"
       img: /images/qrtones.png
       githublink: "https://github.com/mattyhempstead/syncs-hack-2020"
@@ -152,7 +152,7 @@ params:
 
   # Contact
   disable_contact: false
-  contact_content: I'm always happy to talk! You can contact me at my email thomaspschwarz@outlook.com, or any other method that works!
+  contact_content: I'm always happy to talk! Feel free to email me (or whatever communication method you prefer)!
   email: "thomaspschwarz@outlook.com"
 
   # Footer
