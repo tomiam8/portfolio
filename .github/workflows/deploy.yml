@@ -32,3 +32,4 @@ jobs:
           publish_branch: demo
           user_name: hugo-profile bot
           user_email: githubactionsbot@users.noreply.github.com
+          cname: tomschwarz.co
