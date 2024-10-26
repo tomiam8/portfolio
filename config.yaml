@@ -1,4 +1,4 @@
-baseURL: "https://tomschwarz.co"
+baseURL: "https://tom-schwarz.com"
 languageCode: "en-us"
 title: "Tom Schwarz"
 theme: "./.."
@@ -32,7 +32,7 @@ params:
   disable_home: false
   profile_image: "/images/profile.jpg"
   name: "Tom Schwarz"
-  profession: "Computer Science & Physics undergraduate student @ USYD"
+  profession: "Software Engineer at IMC Trading"
   github: "https://github.com/tomiam8"
   linkedin: "https://www.linkedin.com/in/tom-schwarz-3332b7118/"
   instagram: "https://instagram.com/tomiam8"
@@ -40,7 +40,7 @@ params:
     #twitter: "https://twitter.com/"
 
   # About
-  disable_about: false
+  disable_about: true
   descripe_l1_person: "Hi, I'm Tom. I'm a computer science and physics student that loves learning new things by diving in the deep end. As a student, I'm still trying to figure out what I'm interested in, but have really enjoyed algorithm design and analysis, C programming and electromagnetism courses."
   descripe_l2_person: "I've spent a while messing around trying to make cool stuff with varying levels of success. I've detailed some of the successful adventures in [projects](#projects)."
   skills: #I've disabled the skills, see layouts/partials/sections/v3/about.html to reenable
@@ -56,12 +56,20 @@ params:
   # Experience (renamed Work & Education)
   disable_experience: false
   experience:
+    - company: "IMC Trading"
+      id: "IMC"
+      #companyshort: "Graduate Software Engineer" #Shows up as a longer company name. Can change 'company' to be a more descriptive list term, companyfull as actual company. SET AN ID if you do this, different to the company or companyshort. Should probs refactor that whole thing to fix it, but for now the bad hack stays.
+      role: "Graduate Software Engineer"
+      startdate: February 2023
+      enddate: Present
+      featuredpoints:
+        - point: Worked in Java and C++ on low latency options trading systems
     - company: "University of Sydney"
       id: "USYD"
       companyshort: "Uni tutor" #Shows up as a longer company name. Can change 'company' to be a more descriptive list term, companyfull as actual company. SET AN ID if you do this, different to the company or companyshort. Should probs refactor that whole thing to fix it, but for now the bad hack stays.
-      role: "Academic tutor (TA)"
+      role: "Teaching Assistant"
       startdate: March 2021
-      enddate: present
+      enddate: November 2022
       featuredpoints:
         - point: Taught COMP2123 - Algorithms and Data Structures
         - point: Taught INFO113 - Object Oriented Programming
@@ -75,41 +83,15 @@ params:
       featuredpoints:
         - point: Lead society to organise, market and run events for members
         - point: Ensured society continues to support members during transition back in-person and return to lockdown over 2021
-          #    - company: "University of Sydney"
-          #      companyshort: "B. Science (Physics, Computer Science)"
-          #      id: "Undergrad"
-          #      role: "B. Science (Adv) & Advanced Studies (Physics, Computer Science)"
-          #      startdate: 2019
-          #      enddate: 2022 (expected)
-          #      featuredpoints:
-          #        - point: a point
-    - company: "Barker College"
-      companyshort: "H.S. tutor"
-      id: "mentoring"
-      # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
-      role: "Supervised Study Mentor"
-      startdate: March 2019
-      enddate: June 2021
-      featuredpoints:
-        - point: Supervised a high school's afternoon study program as part of a team of tutors
-        - point: Helped students with maths, physics and other subjects
-        - point: Helped students to stay focused and study effectively
-    - company: "WiseTech Global"
-      role: "Work Experience"
-      id: "WiseTechGlobal"
-      startdate: September 2016
-      enddate: September 2016
-      featuredpoints:
-        - point: Worked on UI/UX improvements as part of the front end team for a new web-based product over a week long period
 
   # Education
   disable_education: false
   education:
-    - degree: "B. Science (Advanced) and B. Advanced Studies"
-      branch: "Physics, Computer Science"
-      university: "University of Science"
+    - degree: "B. Science / B. Advanced Studies"
+      branch: "Computer Science (Honours Class 1 and the University Medal), Physics"
+      university: "University of Sydney"
       startedyear: "2019"
-      graduation: "2022 (expected)"
+      graduation: "2022"
 
   # Projects
   disable_projects: false
